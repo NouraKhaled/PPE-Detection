@@ -1,0 +1,83 @@
+============================================================
+  DATASET INFORMATION
+  Intelligent Lab Safety System — Graduation Project
+  King Faisal University
+============================================================
+
+The dataset used to train the YOLOv11 PPE-detection model
+is hosted on Kaggle by the project team. It is NOT included
+on this CD because of its size (over 1 GB); reviewers and
+future students should download it directly from Kaggle to
+make sure they always get the latest version.
+
+
+------------------------------------------------------------
+  Dataset details
+------------------------------------------------------------
+
+   Dataset name : dataset2
+                  (PPE detection dataset prepared by the
+                   project team for this graduation project)
+
+   Hosted by    : Shatha Alhosayyen (project team member)
+
+   Source       : Kaggle
+
+   URL          : https://www.kaggle.com/datasets/shathaalhosayyen/dataset2
+
+   Format       : YOLO (images + .txt label files + data.yaml)
+
+   Classes      : labcoat, gloves, goggles, mask
+                  (a person is considered compliant when all
+                   four PPE classes are detected; missing
+                   classes are reported as violations)
+
+
+------------------------------------------------------------
+  How to download and use the dataset
+------------------------------------------------------------
+
+1. Open the dataset URL above in a browser.
+
+2. Sign in to Kaggle (free account).
+
+3. Click the "Download" button to get the dataset as a
+   .zip file.
+
+4. Extract it. The dataset ships with a single train/
+   folder (no separate valid/ or test/ folders); the
+   train / validation / test split is performed in code
+   during training. You should see a structure like:
+
+     dataset2/
+     ├── train/
+     │   ├── images/
+     │   └── labels/
+     └── data.yaml
+
+5. To retrain the model on Kaggle Notebooks (recommended,
+   free GPU), use "Add Input → Datasets" inside a new
+   notebook and search for the dataset by name. The dataset
+   will be mounted at:
+
+     /kaggle/input/dataset2/
+
+   The training notebook splits the train/ folder into
+   training / validation / test subsets at runtime, so no
+   manual splitting is required before upload.
+
+   Then follow Section 11 of SETUP_GUIDE.md to train.
+
+
+------------------------------------------------------------
+  Citation
+------------------------------------------------------------
+
+   If you reuse this dataset, please credit the project
+   team and link back to the Kaggle page:
+
+     Alhosayyen, S., Alnahari, E., Al-Shaikhi, S., Naji, H.
+     (2026). dataset2 — PPE Detection Dataset. Kaggle.
+     https://www.kaggle.com/datasets/shathaalhosayyen/dataset2
+
+============================================================

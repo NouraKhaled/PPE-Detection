@@ -1,0 +1,127 @@
+============================================================
+  TOOLS AND SOFTWARE USED
+  Intelligent Lab Safety System — Graduation Project
+  King Faisal University
+============================================================
+
+All tools listed below are FREE and open-source (or have a free
+edition that is sufficient to run this project).
+
+------------------------------------------------------------
+1. Visual Studio Code  (IDE / code editor)
+------------------------------------------------------------
+   Used for editing the React / TypeScript frontend and the
+   Python backend.
+
+   Download: https://code.visualstudio.com/Download
+   License : Free (MIT-licensed open source)
+
+   Recommended VS Code extensions:
+     - Python (Microsoft)
+         https://marketplace.visualstudio.com/items?itemName=ms-python.python
+     - Pylance
+         https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance
+     - ESLint
+         https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+     - Tailwind CSS IntelliSense
+         https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+     - ES7+ React/Redux/React-Native snippets
+         https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+------------------------------------------------------------
+2. Python 3.10 or later  (backend runtime)
+------------------------------------------------------------
+   Used to run server.py (WebSocket + HTTP API + YOLO inference).
+
+   Download: https://www.python.org/downloads/
+   License : Free (PSF License)
+
+   Important:
+     - On Windows, tick "Add Python to PATH" during install.
+     - Verify installation: open a terminal and run "python --version".
+
+------------------------------------------------------------
+3. Node.js 18 or later + npm  (frontend runtime)
+------------------------------------------------------------
+   Used to install React/Vite dependencies and run the dev server.
+
+   Download: https://nodejs.org/en/download (choose the LTS version)
+   License : Free (MIT)
+
+   Verify installation:
+     node --version
+     npm  --version
+
+------------------------------------------------------------
+4. Kaggle Notebooks  (model training environment)
+------------------------------------------------------------
+   Used to train and evaluate the YOLOv11 PPE detection model
+   on a free GPU (NVIDIA T4 / P100). The trained weight file
+   (best.pt) is then downloaded from Kaggle and copied into
+   the project's models/ folder.
+
+   Website : https://www.kaggle.com/code
+   License : Free (Kaggle account required, with phone-number
+             verification to unlock the GPU/TPU accelerator)
+
+------------------------------------------------------------
+5. Ultralytics YOLO  (computer-vision framework)
+------------------------------------------------------------
+   Provides the YOLOv11 architecture used for PPE detection.
+
+   Website   : https://docs.ultralytics.com/
+   Install   : pip install ultralytics
+   License   : AGPL-3.0 (free for academic use)
+
+------------------------------------------------------------
+6. SQLite  (embedded database)
+------------------------------------------------------------
+   Used by the backend to persist users, detections, sensor
+   readings, and event logs. No separate installation is
+   required — SQLite is built into Python's standard library
+   (sqlite3 module).
+
+   Optional GUI for browsing the database file:
+     DB Browser for SQLite — https://sqlitebrowser.org/
+     License: Free (open source)
+
+------------------------------------------------------------
+7. Python packages used (installed via pip)
+------------------------------------------------------------
+   websockets         — WebSocket server
+   ultralytics        — YOLOv11 inference and training
+   opencv-python      — image decoding and resizing
+   pillow             — image utilities
+   torch              — deep-learning backend used by YOLO
+   numpy              — numerical arrays
+
+   Install all at once:
+     pip install websockets ultralytics opencv-python pillow torch numpy
+
+------------------------------------------------------------
+8. Frontend libraries (installed via npm)
+------------------------------------------------------------
+   The full list is in package.json. Highlights:
+     react, react-dom        — UI framework
+     vite                    — dev server and bundler
+     typescript              — typed JavaScript
+     tailwindcss             — utility-first CSS framework
+     lucide-react            — icon set
+     recharts                — chart components
+     @radix-ui/*             — accessible UI primitives
+
+   Install all at once:
+     npm install
+
+------------------------------------------------------------
+9. Hardware (optional, only required for the live demo)
+------------------------------------------------------------
+   - Logitech webcam (any USB webcam works)
+   - Raspberry Pi 4 (only if using the physical sensors)
+   - DHT11 temperature/humidity sensor
+   - MQ-2 gas sensor
+   - 5 V relay module to control the gas valve
+
+============================================================
+  END OF TOOL LIST
+============================================================
