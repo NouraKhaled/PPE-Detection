@@ -2,15 +2,7 @@
   CONTENTS OF THIS CD
 ------------------------------------------------------------
 
-1_Final_Report/
-    GraduationProjectReport.pdf
-    GraduationProjectReport.docx
-        - The complete graduation-project report (soft copy).
-        - PDF is the primary version; the editable Word
-          document is included for archiving.
-
 2_Source_Code/
-    lab_safety_system3/
         - Complete source code of the project.
         - Includes the React + TypeScript frontend and the
           Python backend (server.py).
@@ -48,21 +40,18 @@ README.txt
   HOW TO USE THIS CD
 ------------------------------------------------------------
 
-1. Read 1_Final_Report/GraduationProjectReport.pdf for the
-   project description, design, and results.
-
-2. Download the trained model file (best.pt) from the
+1. Download the trained model file (best.pt) from the
    Google Drive link in the 2_Source_Code section above
    and place it inside:
        2_Source_Code/lab_safety_system3/models/best.pt
 
-3. To rebuild the working system on a new computer, follow
+2. To rebuild the working system on a new computer, follow
    4_Setup_Guide/SETUP_GUIDE.md from start to finish.
 
-4. To install only the tools, refer to
+3. To install only the tools, refer to
    3_Tools_and_Software/tools.txt for download links.
 
-5. To retrain the model, see dataset.txt for the dataset
+4. To retrain the model, see dataset.txt for the dataset
    source and Section 11 of SETUP_GUIDE.md for the Kaggle
    training instructions.
 
